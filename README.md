@@ -84,3 +84,8 @@ Stress Level: Rating of your stress level (1-10).
 
 Mental Well-Being: A brief description of your mental state.
 
+# Contributing
+Feel free to fork this repository, make improvements, and create pull requests. All contributions are welcome!
+
+# License
+This project is open-source and available under the MIT License.
