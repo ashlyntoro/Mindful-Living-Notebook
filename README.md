@@ -11,6 +11,8 @@ This Python application is designed to help you monitor both your physical and m
 
 -Simple interface: Interactive, command-line interface with easy navigation.
 
+- Search Entries by Date: Search for journal entries for a specific date (e.g., YYYY-MM-DD).
+
 # How to Use
 
 # 1. Clone or Download the Project
@@ -36,7 +38,8 @@ The application will present you with the following menu:
 --- Wellness Journal ---
 1. Log a new entry
 2. View past entries
-3. Exit
+3.  Search entries by date
+4. Exit
 ```
 
 Option 1: Log a New Entry
@@ -62,6 +65,10 @@ Option 2: View Past Entries
 This option allows you to view all past entries stored in the wellness_journal.csv file. Each entry is displayed with the corresponding date and time.
 
 Option 3: 
+
+To search for entries, input a date (e.g., 2024-11-22), and any matching entries will be displayed.
+
+Option 4:
 
 This option exits the application.
 
