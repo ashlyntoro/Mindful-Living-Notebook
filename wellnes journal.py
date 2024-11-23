@@ -83,6 +83,62 @@ def main():
             break
         else:
             print("Invalid choice, please select again.")
+# Function to search entries by date
+def search_entries():
+    print("\n--- Search Journal Entries ---")
+    search_date = input("Enter the date to search for (YYYY-MM-DD): ")
+    
+    if os.path.exists(file_path):
+        found = False
+        with open(file_path, mode='r') as file:
+            reader = csv.reader(file)
+            headers = next(reader)  # Skip the header row
+            for row in reader:
+                if row[0].startswith(search_date):
+                    found = True
+                    print(f"\nDate: {row[0]}")
+                    print(f"Physical Activity: {row[1]}")
+                    print(f"Sleep Quality: {row[2]}")
+                    print(f"Diet: {row[3]}")
+                    print(f"Energy Level: {row[4]}")
+                    print(f"Mood: {row[5]}")
+                    print(f"Stress Level: {row[6]}")
+                    print(f"Mental Well-Being: {row[7]}")
+                    print("-" * 40)
+        if not found:
+            print(f"No entries found for {search_date}.")
+    else:
+        print("No journal file found. Please log an entry first.")
+
+# Update the menu to include search functionality
+def display_menu():
+    print("\n--- Wellness Journal ---")
+    print("1. Log a new entry")
+    print("2. View past entries")
+    print("3. Search entries by date")
+    print("4. Exit")
+
+# Update the main loop to handle the new option
+def main():
+    # Initialize the journal file with headers if it doesn't exist
+    initialize_journal()
+
+    # Main loop for the journal application
+    while True:
+        display_menu()
+        choice = input("Please choose an option (1, 2, 3, or 4): ")
+        
+        if choice == "1":
+            log_entry()
+        elif choice == "2":
+            view_entries()
+        elif choice == "3":
+            search_entries()
+        elif choice == "4":
+            print("Goodbye! Stay well.")
+            break
+        else:
+            print("Invalid choice, please select again.")
 
 if __name__ == "__main__":
     main()
