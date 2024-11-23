@@ -42,7 +42,7 @@ The application will present you with the following menu:
 4. Exit
 ```
 
-Option 1: Log a New Entry
+Option 1: 
 This option allows you to log a new entry. You will be prompted to enter the following details:
 
 
@@ -60,7 +60,7 @@ Stress Level: Rate your stress level on a scale of 1 to 10 (1=very low, 10=very 
 
 Mental Well-Being: Provide a brief description of your overall mental well-being (e.g., Good, Neutral, Bad).
 
-Option 2: View Past Entries
+Option 2: 
 
 This option allows you to view all past entries stored in the wellness_journal.csv file. Each entry is displayed with the corresponding date and time.
 
